@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import React from "react";
+import Screens from "./Screen/ScreenIndex";
+import NavBar from "./components/NavBar";
+import Landing from "./Screen/Landing";
+import NavItem from "./components/NavItem";
+import categories from "./data/categories.json";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar>
+        {categories.map(({ id, title, link }) => (
+          <NavItem key={id} link={link} title={title} />
+        ))}
+      </NavBar>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        {categories.map(({ id, link }) => (
+          <Route
+            key={id}
+            path={`/${link}.html`}
+            element={Screens[`${link}`]()}
+          />
+        ))}
+      </Routes>
+    </>
   );
 }
 
