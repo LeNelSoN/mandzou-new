@@ -1,27 +1,21 @@
 
-import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
+import { MdOutlineMenuBook } from 'react-icons/md';
 
 
-/**
- * Permet d'afficher la barre de navigation avec un titre et des catégories
- * @param  {...any} categories un tableu d'objet {title: categorie, link: URL}
- * @returns La barre de navigation avec les catégories et leurs liens
- */
-const NavBar = ({children}) => {
+const NavBar = ({isCollapse, setCollapse, withHomeButton = true, children}) => {
 
-  const [isCollapse, setCollapse] = useState(false)
   
   const handleClick = () => {
     setCollapse(!isCollapse)
   }
 
     return (
-      <nav className="navbar navbar-expand-lg bg-light">
+      <nav className="navbar navbar-expand-lg bg-light sticky-top">
       <div className="container">
-      <Link className='navbar-brand' to={'/'} > Mandzou</Link>
+      {withHomeButton && <Link onClick={handleClick} className='navbar-brand' to={'/'} > Mandzou</Link>}
         <button className="navbar-toggler" type="button" onClick={handleClick}>
-          <span className="navbar-toggler-icon"></span>
+          <MdOutlineMenuBook />
         </button>
         <div className={`collapse navbar-collapse ${isCollapse && 'show'}`}>
           <ul className="navbar-nav">

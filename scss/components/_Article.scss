@@ -1,0 +1,7 @@
+@import '../../node_modules/bootstrap/scss/card';
+
+.card{
+    transition: all .4s;
+    &:hover{
+        box-shadow: 5px 5px 20px #0000006c !important;}
+}

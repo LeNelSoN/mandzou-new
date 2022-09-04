@@ -1,0 +1,6 @@
+
+@for $i from 1 through 6 {
+    .w-#{$i} {
+        width: 10vw*$i !important;
+    }
+}

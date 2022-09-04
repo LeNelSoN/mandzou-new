@@ -1,6 +1,9 @@
 @import '../../node_modules/bootstrap/scss/navbar';
 @import '../../node_modules/bootstrap/scss/nav';
 
+
+$navbar-toggler-border-color: #00000000;
+
 .navbar{
     position: sticky !important;
     a:hover{
