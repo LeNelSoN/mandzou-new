@@ -7,6 +7,7 @@ import NavItem from "./components/NavItem";
 import categories from "./data/categories.json";
 import Boutique from "./Screen/Boutique/Boutique";
 import BoutiqueCat from "./Screen/Boutique/BoutiqueCat";
+import Footer from "./components/Footer";
 
 function App() {
   const [isCollapse, setCollapse] = useState(false);
@@ -57,6 +58,7 @@ function App() {
           />
         </Route>
       </Routes>
+      <Footer />
     </>
   );
 }

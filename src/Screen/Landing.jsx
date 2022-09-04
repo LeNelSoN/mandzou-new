@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../components/Card";
 import Carousel from "../components/Carousel";
 import Mandine from '../assets/Photos Corporate/Mandzou 2021 Photo Corporate Atelier HD (42).jpg'
+import PhotoGrid from "../components/PhotoGrid";
 
 
 function Landing() {
@@ -20,6 +21,7 @@ function Landing() {
               commander sur mesure en me contactant par mail. Et enfin,
               retrouvez-moi lors de salons, festivals ou expositions.`}
         />
+        <PhotoGrid />
       </div>
     </>
   );
