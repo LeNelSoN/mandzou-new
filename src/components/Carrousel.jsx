@@ -18,7 +18,7 @@ const Carrousel = () => {
 
   return (
     <div>
-        <img src={require(`../assets/carousel/photo_carousel0${photoIndex}.jpg`)} alt="carrousel" className='container'/>
+        <img src={require(`../assets/carousel/photo_carousel0${photoIndex}.jpg`)} alt="carrousel" className='container my-5'/>
     </div>
   )
 }

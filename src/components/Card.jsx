@@ -17,10 +17,10 @@ const Card = ({title, description, img, isReverse = false}) => {
       <div className={`row g-0 m-5 ${isReverse && 'd-flex flex-row-reverse'}`}>
         <div className="col-lg-6 d-flex align-items-center">
           <div className={`card-body mb-3 ${isReverse ? 'ms-lg-5' : 'me-lg-5'} `}>
-            <h5 className="card-title mb-3">{title}</h5>
-            <small className="card-text">
+            <h3 className="card-title mb-3">{title}</h3>
+            <p className="card-text fs-6">
               {description}
-            </small>
+            </p>
           </div>
         </div>
         <div className="col-lg-6">
