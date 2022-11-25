@@ -1,15 +1,15 @@
 import React from "react";
 import Card from "../components/Card";
-import Carousel from "../components/Carousel";
 import Mandine from '../assets/Photos Corporate/Mandzou 2021 Photo Corporate Atelier HD (42).jpg'
 import PhotoGrid from "../components/PhotoGrid";
+import Carrousel from "../components/Carrousel";
 
 
 function Landing() {
   return (
     <>
-      <Carousel />
       <div className="container">
+      <Carrousel />
         <Card
           title={"Mandzou"}
           img={Mandine}

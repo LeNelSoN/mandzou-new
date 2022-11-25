@@ -2,7 +2,6 @@
 import { Link } from 'react-router-dom';
 import { MdOutlineMenuBook } from 'react-icons/md';
 
-
 const NavBar = ({isCollapse, setCollapse, withHomeButton = true, children}) => {
 
   
