@@ -5,7 +5,7 @@ const NavItem = ({isCollapse, setCollapse, link, title}) => {
 
   const handleClick = () => {
     setCollapse(!isCollapse)
-  }
+}
 
     return (
       <li className="nav-item">
