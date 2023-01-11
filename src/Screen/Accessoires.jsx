@@ -10,8 +10,8 @@ function Accessoires() {
       <CustomBreadcrumb/>
       <div className='container'>
         <PhotoGrid photo1={Fils} photo2={Logo} photo3={Fils} photo4={Fils}/>
-        <h2 id="presentation" className='mt-2'>Présentation</h2>
-        <p>
+        <h2 id="presentation" className='my-5'>Présentation</h2>
+        <p className='mt-5 mt-lg-3'>
           At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium 
           voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati 
           cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est 
@@ -23,8 +23,8 @@ function Accessoires() {
           ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
         </p>
         <PhotoGrid photo1={Fils} photo2={Logo} photo3={Fils} photo4={Fils}/>
-        <h2 id="pince-tissu" className='mt-2'>Pince Tissu</h2>
-        <p>
+        <h2 id="pince-tissu" className='my-5'>Pince Tissu</h2>
+        <p className='mt-5 mt-lg-3'>
           At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium 
           voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati 
           cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est 
@@ -36,8 +36,8 @@ function Accessoires() {
           ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
         </p>
         <PhotoGrid photo1={Fils} photo2={Logo} photo3={Fils} photo4={Fils}/>
-        <h2 id="pince-plume" className='mt-2'>Pince Plume</h2>
-        <p>
+        <h2 id="pince-plume" className='my-5'>Pince Plume</h2>
+        <p className='mt-5 mt-lg-3'>
           At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium 
           voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati 
           cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est 
@@ -49,8 +49,8 @@ function Accessoires() {
           ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
         </p>
         <PhotoGrid photo1={Fils} photo2={Logo} photo3={Fils} photo4={Fils}/>
-        <h2 id="bibi" className='mt-2'>Bibi</h2>
-        <p>
+        <h2 id="bibi" className='my-5'>Bibi</h2>
+        <p className='mt-5 mt-lg-3'>
           At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium 
           voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati 
           cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est 
@@ -62,8 +62,8 @@ function Accessoires() {
           ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
         </p>
         <PhotoGrid photo1={Fils} photo2={Logo} photo3={Fils} photo4={Fils}/>
-        <h2 id="headband" className='mt-2'>Headband</h2>
-        <p>
+        <h2 id="headband" className='my-5'>Headband</h2>
+        <p className='mt-5 mt-lg-3'>
           At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium 
           voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati 
           cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est 
@@ -75,8 +75,8 @@ function Accessoires() {
           ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
         </p>
         <PhotoGrid photo1={Fils} photo2={Logo} photo3={Fils} photo4={Fils}/>
-        <h2 id="barette" className='mt-2'>Barette</h2>
-        <p>
+        <h2 id="barette" className='my-5'>Barette</h2>
+        <p className='mt-5 mt-lg-3'>
           At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium 
           voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati 
           cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est 
@@ -88,8 +88,8 @@ function Accessoires() {
           ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
         </p>
         <PhotoGrid photo1={Fils} photo2={Logo} photo3={Fils} photo4={Fils}/>
-        <h2 id="bijoux" className='mt-2'>Bijoux</h2>
-        <p>
+        <h2 id="bijoux" className='my-5'>Bijoux</h2>
+        <p className='mt-5 mt-lg-3'>
           At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium 
           voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati 
           cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est 
@@ -100,6 +100,7 @@ function Accessoires() {
           repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, 
           ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
         </p>
+        <PhotoGrid photo1={Fils} photo2={Logo} photo3={Fils} photo4={Fils}/>
       </div>  
     </>
 )

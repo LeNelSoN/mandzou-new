@@ -1,4 +1,4 @@
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import React, { useState } from "react";
 import Screens from "./Screen/ScreenIndex";
 import NavBar from "./components/NavBar";
