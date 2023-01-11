@@ -11564,6 +11564,25 @@ textarea.form-control-lg {
   grid-area: 3/4/5/5;
 }
 
+.wedding--banner {
+  background: url("./assets/Mariages/Mariage_background.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 45vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0.75;
+}
+.wedding--banner p {
+  font-size: 1.75vw;
+}
+
+@media screen and (max-width: 768px) {
+  .wedding--banner p {
+    font-size: 0.75rem;
+  }
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
