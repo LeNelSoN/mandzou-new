@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import React, { useState } from "react";
 import Screens from "./Screen/ScreenIndex";
 import NavBar from "./components/NavBar";
@@ -24,7 +24,9 @@ function App() {
             title={title}
           />
         ))}
-        <NavItem link={"Boutique"} title={"Boutique"} />
+        <li className="nav-item">
+          <a className='nav-link' href="https://www.etsy.com/fr/shop/Mandzou">Boutique</a>
+        </li>      
       </NavBar>
       <Routes>
         <Route path="/" element={<Landing />} />
