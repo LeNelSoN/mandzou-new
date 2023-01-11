@@ -1,0 +1,10 @@
+
+@for $i from 1 through 6 {
+    .w-#{$i} {
+        width: 10vw*$i !important;
+    }
+}
+
+.h-50{
+    min-height: 40vh;
+}

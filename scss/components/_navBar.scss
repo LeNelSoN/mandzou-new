@@ -1,7 +1,11 @@
 @import '../../node_modules/bootstrap/scss/navbar';
 @import '../../node_modules/bootstrap/scss/nav';
 
+
+$navbar-toggler-border-color: #00000000;
+
 .navbar{
+    z-index: 9999;
     position: sticky !important;
     a:hover{
         cursor: pointer;
