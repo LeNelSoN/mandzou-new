@@ -5,12 +5,12 @@ import FilleAvecBallonJaune from '../assets/Mariages/Mariage_fille_avec_ballon_j
 
 const GridPhotoText = () => {
   return (
-    <div className="grid-photo-text container">
+    <div className="grid-photo-text container mt-5">
         <div className="div1"><img className='img-fluid' src={CeciliaQuiRigole} alt='Cecilia Qui Rigole'/></div>
         <div className="div2"><img className='img-fluid' src={BrocheMariage} alt='Broche Mariage'/></div>
         <div className="div3"><img className='img-fluid' src={FilleAvecBallonJaune} alt='Fille Avec Ballon Jaune'/></div>
         <div className="div4">      
-            <p>
+            <p className='px-5 py-3'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
