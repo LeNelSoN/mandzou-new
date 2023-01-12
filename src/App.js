@@ -25,7 +25,7 @@ function App() {
           />
         ))}
         <li className="nav-item">
-          <a className='nav-link' href="https://www.etsy.com/fr/shop/Mandzou">Boutique</a>
+          <a className='nav-link' href="https://www.etsy.com/fr/shop/Mandzou" target='_blank' rel='noreferrer'>Boutique</a>
         </li>      
       </NavBar>
       <Routes>
