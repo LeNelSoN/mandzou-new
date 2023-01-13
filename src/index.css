@@ -11590,23 +11590,33 @@ textarea.form-control-lg {
   grid-column-gap: 4px;
   grid-row-gap: 4px;
 }
-
-.div1 {
+.grid-photo-text .div1 {
   grid-area: 1/1/3/3;
 }
-
-.div2 {
+.grid-photo-text .div2 {
   grid-area: 1/3/3/5;
 }
-
-.div3 {
+.grid-photo-text .div3 {
   grid-area: 1/5/5/7;
 }
-
-.div4 {
+.grid-photo-text .div4 {
   grid-area: 3/1/5/5;
 }
 
+@media screen and (max-width: 990px) {
+  .grid-photo-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-photo-text .div3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .div2 {
+    order: 1;
+  }
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }

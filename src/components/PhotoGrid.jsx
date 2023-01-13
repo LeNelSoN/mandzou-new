@@ -15,8 +15,8 @@ const PhotoGrid = ({photo1, photo2, photo3, photo4, imgAlt}) => {
 
   return (
     <>
-      <Modal show={show} onHide={handleHide}>
-        <img src={imgModal} alt={imgAlt} onClick={handleHide}/>
+      <Modal className='mt-5 pt-5' show={show} onHide={handleHide}>
+        <img className='img-thumbnail' src={imgModal} alt={imgAlt} onClick={handleHide}/>
       </Modal>
       <div className="grid-photo container">
           <div className="div1"><img className='img-fluid' src={photo1} alt={`${photo1}`} onClick={handleShow}/>  </div>

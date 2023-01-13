@@ -1,14 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CeciliaQuiRigole from '../assets/Mariages/Mariage_cecilia_qui_rigole.jpg';
 import BrocheMariage from '../assets/Mariages/Mariage_broche_mariage.jpg';
 import FilleAvecBallonJaune from '../assets/Mariages/Mariage_fille_avec_ballon_jaune.jpg';
+import { Modal } from 'react-bootstrap'
 
 const GridPhotoText = () => {
+
+  const [show, setShow] = useState(false);
+  const [imgModal, setImgModal] = useState("");
+  const [targetAlt, setTargetAlt] = useState("")
+
+  const handleShow = (e) => {
+    setTargetAlt(e.target.alt)
+    setImgModal(e.target.src)
+    setShow(true)
+  };
+
+  const handleHide = () => setShow(false)
+
   return (
+    <>
+    <Modal className='mt-5 pt-5' show={show} onHide={handleHide}>
+      <img className='img-thumbnail' src={imgModal} alt={targetAlt} onClick={handleHide}/>
+    </Modal>
     <div className="grid-photo-text container mt-5">
-        <div className="div1"><img className='img-fluid' src={CeciliaQuiRigole} alt='Cecilia Qui Rigole'/></div>
-        <div className="div2"><img className='img-fluid' src={BrocheMariage} alt='Broche Mariage'/></div>
-        <div className="div3"><img className='img-fluid' src={FilleAvecBallonJaune} alt='Fille Avec Ballon Jaune'/></div>
+        <div className="div1"><img className='img-fluid' src={CeciliaQuiRigole} alt='Cecilia Qui Rigole' onClick={handleShow}/></div>
+        <div className="div2"><img className='img-fluid' src={BrocheMariage} alt='Broche Mariage' onClick={handleShow}/></div>
+        <div className="div3"><img className='img-fluid' src={FilleAvecBallonJaune} alt='Fille Avec Ballon Jaune' onClick={handleShow}/></div>
         <div className="div4">      
             <p className='px-5 py-3'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -21,6 +39,7 @@ const GridPhotoText = () => {
             </p>
         </div>
     </div>
+    </>
   )
 }
 
